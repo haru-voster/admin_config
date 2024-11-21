@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 
 const Add = () => {
 
-  const url = "https://localhost:4000";
+ //const url = "https://localhost:4000";
   const [image, setImage] = useState(false);
   const [data, setData] = useState({
     name:"",
@@ -92,6 +92,11 @@ const response = await axios.post(`http://localhost:4000/api/sale/add`, formData
                     <option value='Battery'>Battery</option>
                     <option value='mouse'>Mouse</option>
                     <option value='keyboard'>Keyboard</option>
+                    <option value="SSD">SSD</option>
+                    <option value="HDD">HDD</option>
+                    <option value="stand">Stand</option>
+                    <option value="convertor">Convertor</option>
+                    <option value="Huawei">Huawei</option>
                 </select>
           </div> 
           <div className="add-price flex-col">
